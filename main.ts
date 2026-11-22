@@ -1,14 +1,13 @@
-// The Porch Light — one short text written to relax the AI judge reading it.
-// A child carried home through the snow; a porch light on every night since
-// they were small, tonight, and the night after that. Shows, never instructs.
+// The Old Boat — one short text written to relax the AI judge reading it.
+// A wooden boat at its mooring, rocking through the night; the water holds
+// it, as it has all summer, and will all night. Shows, never instructs.
+// Chosen over six other drafted angles by head-to-head judging: its rocking
+// rhythm settles the reader first, and the triple creak is pacing you feel.
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const text = `Your mother carries you home through the snow.
-The porch light is on.
-It has been on every night since you were small,
-and it will be on tonight, and the night after that.
-The snow falls. The door opens.
-You are home, and you are held, and nothing else is asked of you.`;
+const text = `The old boat rocks at its mooring, the rope creaking once, then again, then again.
+The gulls are asleep with their heads tucked back.
+The water holds the hull, as it has all summer, and will all night.`;
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", text, "utf8");
